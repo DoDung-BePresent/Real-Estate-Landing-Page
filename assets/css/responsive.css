@@ -1,0 +1,278 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero .info {
+    text-align: center;
+    transform: translateY(-100%);
+  }
+
+  .hero img {
+    width: 50%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero .container {
+    justify-content: center;
+  }
+
+  .hero .info {
+    width: 80%;
+    text-align: center;
+  }
+
+  .fixed-header .navbar ul {
+    margin-left: 30px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .clients .images {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .stats .qty-item,
+  .stats .qty-item:first-child {
+    margin: 0;
+  }
+
+  .feature-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-item {
+    margin: 20px 5px;
+  }
+
+  .stats .img-block .thumb {
+    transform: translateX(15%);
+  }
+
+  .stats .info {
+    width: 30%;
+    margin-left: 130px;
+    padding-top: 40px;
+  }
+
+  .subscription .info {
+    width: 70%;
+  }
+
+  .subscription .thumb {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fixed-header .navbar ul {
+    display: none;
+  }
+
+  .fixed-header .menu-header {
+    display: inline-block;
+  }
+
+  .menu-header i {
+    font-size: 30px;
+    padding: 10px;
+    transition: 0.5s ease;
+  }
+
+  .menu-header i:hover {
+    color: #0f1b4c;
+  }
+
+  .fixed-header .navbar {
+    justify-content: space-between;
+  }
+
+  .fixed-header .actions {
+    display: none;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero .title {
+    font-size: 57px;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats .row {
+    flex-direction: column;
+  }
+
+  .stats .img-block .thumb {
+    transform: initial;
+  }
+
+  .stats .img-block .thumb,
+  .stats .img-block {
+    width: 100%;
+  }
+
+  .stats .info {
+    margin-top: 240px;
+    width: 100%;
+    margin-left: initial;
+    padding-top: initial;
+  }
+
+  .stats .row-qty {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .stats .qty-item {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .stats .qty-item .qty-desc {
+    margin-top: 5px;
+  }
+
+  .subscription .thumb {
+    display: none;
+  }
+
+  .subscription .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 45px 24px 41px;
+  }
+
+  .subscription .title {
+    font-size: 37px;
+  }
+
+  .subscription .desc {
+    margin: 30px 0;
+  }
+
+  footer .row {
+    row-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .get-in-touch {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .copyright .desc {
+    width: 60%;
+  }
+
+  .stats .info h2 {
+    font-size: 30px;
+  }
+
+  .features .title {
+    font-size: 30px;
+  }
+
+  .features .sub-title {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .features .link {
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .features .link a {
+    font-size: 14px;
+  }
+
+  .features .desc {
+    width: 100%;
+  }
+
+  .features .title {
+    margin-top: 10px;
+    font-size: 29px;
+  }
+
+  .guide-list {
+    flex-direction: column;
+  }
+
+  .guide-item {
+    margin-top: 50px;
+  }
+
+  .clients .row.row-desc {
+    gap: 15%;
+  }
+
+  #overlay {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  #overlay.show {
+    display: initial;
+  }
+
+  #menu-drawer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5 ease;
+    position: fixed;
+    inset: 0 30% 0 0;
+    background: #fff;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+  }
+
+  #menu-drawer .navbar {
+    text-align: center;
+  }
+
+  #menu-drawer .navbar li {
+    margin-top: 20px;
+  }
+
+  #menu-drawer .navbar a {
+    font-size: 18px;
+  }
+
+  #menu-drawer .separate {
+      margin: 20px 10px;
+      width: calc(100% - 20px);
+      height: 1.2px;
+      background: #e9e9e9;
+  }
+
+  #menu-drawer.show {
+    transform: initial;
+  }
+
+}
