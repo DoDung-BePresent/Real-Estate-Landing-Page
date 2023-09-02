@@ -56,6 +56,10 @@ ul {
   display: none;
 }
 
+#menu-drawer {
+  display: none;
+}
+
 .fixed-header .navbar {
   display: flex;
   align-items: center;
