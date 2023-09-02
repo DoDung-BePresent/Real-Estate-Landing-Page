@@ -175,7 +175,7 @@
   }
 
   .copyright .desc {
-    width: 60%;
+    width: 50%;
   }
 
   .stats .info h2 {
@@ -194,11 +194,12 @@
   .features .link {
     width: 50%;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     display: flex;
   }
 
   .features .link a {
+    text-align: center;
     font-size: 14px;
   }
 
@@ -273,6 +274,16 @@
 
   #menu-drawer.show {
     transform: initial;
+  }
+
+  #menu-drawer .actions a{
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  #menu-drawer .actions #signIn {
+    margin-right: initial;
+    margin-left: 2px;
   }
 
 }
